@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpUsers.HelpActivity"
+    android:background="@color/black">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/help_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/messagesRelativeMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="90dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messagesRelativeMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpBottomNavigationMenu"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/menu_bottom_background"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/menu_item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:elevation="0dp"
+        />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable-v24/rounded_button_blue.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable-v24/rounded_button_grey.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/bottom_menu_background.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/button_background.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/dialog_rounded.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/garbage_list_card_view.xml" value="0.19375" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/green_button.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_add_garbage_can.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_addgarbagecan.xml" value="0.1609375" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_baseline_navigation_24.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_book_encyclopedia.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_map_search_outline_icon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_outline_menu_24.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_outline_person_24.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/ic_outline_person_outline_24.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/item_menu_selector.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/menu_bottom_background.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/menu_ic_account_profile_user_icon.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/menu_ic_book_encyclopedia.xml" value="0.25" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/menu_ic_map.xml" value="0.25" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/menu_item_selector.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/red_button.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/drawable/rounded_button.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_add_new_marker.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_encyclopedia.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_forgot_password.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_help.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_help_element.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_info_about_item.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_info_message.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_login.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_messages.xml" value="0.2" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_open_window.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/alert_dialog_camera_folders.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/alert_dialog_change_password.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/alert_dialog_error_message.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/alert_dialog_open_image.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/fragment_addmarkerbyuser.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/fragment_blank.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/fragment_info_marker.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/garbage_list.xml" value="0.536" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/info_marker_bottom_sheet.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/list_encyclopedia_item.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/list_garbage.xml" value="0.6" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/list_help_items.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/list_messages.xml" value="0.4" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/marker_info_contents.xml" value="0.536" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/marker_list.xml" value="0.264" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/layout/slide_item_container.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/menu/bottom_menu.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1765625" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1765625" />
+        <entry key="..\:/Users/roma_/AndroidStudioProjects/Trashmap/app/src/main/res/xml/file_paths.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

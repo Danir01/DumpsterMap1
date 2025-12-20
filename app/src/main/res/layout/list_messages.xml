@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/menu_back_1"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/lm_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Письмо от человека с французскими булочками да печеньем"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lm_ll"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lm_subject">
+
+        <TextView
+            android:id="@+id/lm_text"
+            android:layout_width="match_parent"
+            android:scrollHorizontally="true"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Письмо от человека с французскими булочками да печеньем"
+            android:textColor="@color/grey"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/lm_date"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="15.09.2023 16:00"
+            android:textColor="@color/grey"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

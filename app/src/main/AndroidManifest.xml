@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trashmap">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trashmap">
+        <activity
+            android:name=".HelpUsers.HelpElementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpUsers.HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Encyclopedia.InfoAboutItem"
+            android:exported="false" />
+        <activity
+            android:name=".Encyclopedia.EncyclopediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMarkerByUser.AddNewMarker"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authorization.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGJI-d_v87t1aTQnZuG2AxL86C8GLDbos" />
+
+        <activity
+            android:name=".Helpers.OpenWindow"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

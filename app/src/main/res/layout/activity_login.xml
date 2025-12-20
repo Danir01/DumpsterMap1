@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-100dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/loginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:maxLength="100"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        />
+
+
+    <Button
+        android:id="@+id/loginSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:text="Войти"
+        android:textColor="@color/text_color"
+        app:backgroundTint="@color/menu_back_1"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/loginForgottenPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="@string/ForgotPassword"
+        android:textColor="@color/text_color"
+        app:backgroundTint="@color/menu_back_1"/>
+
+    <Button
+        android:id="@+id/loginSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="@string/registration"
+        android:textColor="@color/text_color"
+        app:backgroundTint="@color/menu_back_1"/>
+
+</LinearLayout>
+
+
+</FrameLayout>

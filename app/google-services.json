@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1095530852525",
+    "firebase_url": "https://dumpstermap-68147-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dumpstermap-68147",
+    "storage_bucket": "dumpstermap-68147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095530852525:android:f7c81b51ec77b273b35624",
+        "android_client_info": {
+          "package_name": "com.example.trashmap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABKrTf1hHqQc_FMAlzESi3Aa0rJjTZDJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
