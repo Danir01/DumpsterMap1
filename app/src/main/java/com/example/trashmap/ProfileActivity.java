@@ -176,6 +176,13 @@ public class ProfileActivity extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     finish();
                     return true;
+                case R.id.menu_ai_recognition:
+                    intent = new Intent(getApplicationContext(), com.example.trashmap.AI.WasteRecognitionActivity.class);
+                    intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
+                    startActivity(intent);
+                    overridePendingTransition(0, 0);
+                    finish();
+                    return true;
                 case R.id.menu_profile:
                     return true;
             }

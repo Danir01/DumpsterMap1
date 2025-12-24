@@ -12,6 +12,11 @@
         android:title="Карта"/>
 
     <item
+        android:id="@+id/menu_ai_recognition"
+        android:icon="@drawable/ai_recognition"
+        android:title="ИИ Распознавание"/>
+
+    <item
         android:id="@+id/menu_profile"
         android:icon="@drawable/user"
         android:title="Профиль"/>

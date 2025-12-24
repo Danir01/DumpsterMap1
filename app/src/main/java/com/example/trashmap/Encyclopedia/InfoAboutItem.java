@@ -100,6 +100,13 @@ public class InfoAboutItem extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     finish();
                     return true;
+                case R.id.menu_ai_recognition:
+                    intent = new Intent(getApplicationContext(), com.example.trashmap.AI.WasteRecognitionActivity.class);
+                    intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
+                    startActivity(intent);
+                    overridePendingTransition(0, 0);
+                    finish();
+                    return true;
                 case R.id.menu_profile:
                     intent = new Intent(getApplicationContext(), ProfileActivity.class);
                     intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
@@ -127,7 +134,12 @@ public class InfoAboutItem extends AppCompatActivity {
                 viewPager2.setClipToPadding(false);
                 viewPager2.setClipChildren(false);
                 viewPager2.setOffscreenPageLimit(3);
-                viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+                // Отключаем бесконечную прокрутку
+                if (viewPager2.getChildAt(0) != null) {
+                    viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+                }
+                // Отключаем прокрутку за пределы списка
+                viewPager2.setUserInputEnabled(true);
 
                 CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
                 compositePageTransformer.addTransformer(new MarginPageTransformer(40));
@@ -149,21 +161,31 @@ public class InfoAboutItem extends AppCompatActivity {
                     @Override
                     public void onPageSelected(int position) {
                         super.onPageSelected(position);
-                        switch (position) {
-                            case 0: cont = 0; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 1: cont = 1; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 2: cont = 2; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 3: cont = 3; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 4: cont = 4; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 5: cont = 5; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 6: cont = 6; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 7: cont = 7; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 8: cont = 8; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 9: cont = 9; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 10: cont = 10; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 11: cont = 11; imgNumber.setText(String.valueOf(cont+1)); break;
-                            case 12: cont = 12; imgNumber.setText(String.valueOf(cont+1)); break;
-                            default: cont = 0; imgNumber.setText(""); break;
+                        // Ограничиваем позицию в пределах списка
+                        if (position >= 0 && position < value.size()) {
+                            cont = position;
+                            imgNumber.setText(String.valueOf(cont + 1));
+                        } else {
+                            // Если позиция выходит за пределы, возвращаемся к началу
+                            if (position < 0) {
+                                viewPager2.setCurrentItem(0, false);
+                            } else if (position >= value.size()) {
+                                viewPager2.setCurrentItem(value.size() - 1, false);
+                            }
+                        }
+                    }
+                    
+                    @Override
+                    public void onPageScrollStateChanged(int state) {
+                        super.onPageScrollStateChanged(state);
+                        // Предотвращаем прокрутку за пределы
+                        if (state == ViewPager2.SCROLL_STATE_IDLE) {
+                            int currentItem = viewPager2.getCurrentItem();
+                            if (currentItem < 0) {
+                                viewPager2.setCurrentItem(0, false);
+                            } else if (currentItem >= value.size()) {
+                                viewPager2.setCurrentItem(value.size() - 1, false);
+                            }
                         }
                     }
                 });

@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <!-- Камера (упрощенная версия) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M256,64C149.1,64 64,149.1 64,256s85.1,192 192,192s192,-85.1 192,-192S362.9,64 256,64zM256,384c-70.7,0 -128,-57.3 -128,-128s57.3,-128 128,-128s128,57.3 128,128S326.7,384 256,384z"/>
+    <!-- Объектив -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M256,192c-35.3,0 -64,28.7 -64,64s28.7,64 64,64s64,-28.7 64,-64S291.3,192 256,192z"/>
+    <!-- Вспышка -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M320,160h-16v-16c0,-8.8 -7.2,-16 -16,-16h-96c-8.8,0 -16,7.2 -16,16v16h-16c-8.8,0 -16,7.2 -16,16v128c0,8.8 7.2,16 16,16h160c8.8,0 16,-7.2 16,-16V176C336,167.2 328.8,160 320,160z"/>
+    <!-- AI символ - упрощенный -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M240,240h32v16h-32V240zM240,272h32v16h-32V272zM224,256h16v16h-16V256zM272,256h16v16h-16V256z"/>
+</vector>

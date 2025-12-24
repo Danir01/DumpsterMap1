@@ -4,40 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelpUsers.HelpActivity"
-    android:background="@color/black">
+    android:background="@color/background_color"
+    tools:context=".HelpUsers.HelpActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/help_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toTopOf="@id/messagesRelativeMenu"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="90dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/messagesRelativeMenu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="30dp">
-    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/helpBottomNavigationMenu"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/menu_bottom_background"
-        app:menu="@menu/bottom_menu"
-        app:itemIconSize="25dp"
-        app:itemIconTint="@drawable/menu_item_selector"
-        app:itemRippleColor="@android:color/transparent"
-        app:labelVisibilityMode="unlabeled"
-        app:elevation="0dp"
-        />
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/helpBottomNavigationMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/menu_bottom_background"
+            app:elevation="0dp"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@drawable/menu_item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_menu" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

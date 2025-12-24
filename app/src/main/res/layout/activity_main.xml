@@ -34,13 +34,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Загрузить типы"
+        android:text="Обновить типы отходов"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/mainLoadGarbageTypes"
         android:layout_marginTop="160dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:enabled="false"
-        android:visibility="invisible"/>
+        android:enabled="true"
+        android:visibility="visible"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"/>
 
     <ImageButton
         android:layout_width="40dp"
@@ -107,7 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/menu_bottom_background"
+            android:background="@drawable/bottom_sheet_background"
             app:elevation="0dp"
             app:itemIconSize="35dp"
             app:itemIconTint="@drawable/menu_item_selector"

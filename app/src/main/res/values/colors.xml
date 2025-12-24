@@ -10,17 +10,17 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
 
-    <color name="menu_back_1">#FFFDF2</color>
+    <color name="menu_back_1">#F7F9F5</color>
     <color name="menu_brightness_1">#a4a4a4</color>
     <color name="green_dark_1">#013220</color>
     <color name="red_dark_1">#8b0000</color>
     <color name="brightness_blue_1">#87cefa</color>
     <color name="not_so_white">#676767</color>
 
-    <color name="text_color">#373636</color>
+    <color name="text_color">#333333</color>
         <color name="background_color">#f7f7fe</color>
         <color name="primary_color">#64BE79</color>
-        <color name="accent_color">#FCEE69</color>
+        <color name="accent_color">#66D1B5</color>
         <color name="icon_color">#007560</color>
         <color name="tint">#94CA42</color>
 

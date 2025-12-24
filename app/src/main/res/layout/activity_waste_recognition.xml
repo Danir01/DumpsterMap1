@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".AI.WasteRecognitionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/wr_bottom_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Заголовок -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Распознавание отходов"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/icon_color"
+                android:fontFamily="@font/comfortaa_bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Изображение -->
+            <ImageView
+                android:id="@+id/wr_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_button"
+                android:src="@drawable/ic_upload_photo"
+                android:contentDescription="Изображение отходов для распознавания"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Кнопки выбора изображения -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/wr_btn_take_photo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Сфотографировать"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/text_color"
+                    android:background="@drawable/menu_bottom_background"
+                    app:backgroundTint="@color/menu_back_1" />
+
+                <Button
+                    android:id="@+id/wr_btn_select_photo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Выбрать из галереи"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/text_color"
+                    android:background="@drawable/menu_bottom_background"
+                    app:backgroundTint="@color/menu_back_1" />
+            </LinearLayout>
+
+            <!-- Кнопка распознавания -->
+            <Button
+                android:id="@+id/wr_btn_recognize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Распознать тип отходов"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/text_color"
+                android:background="@drawable/menu_bottom_background"
+                app:backgroundTint="@color/menu_back_1"
+                android:layout_marginBottom="16dp"
+                android:enabled="false" />
+
+            <!-- Прогресс бар -->
+            <ProgressBar
+                android:id="@+id/wr_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <!-- Контейнер результатов -->
+            <LinearLayout
+                android:id="@+id/wr_result_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/wr_result_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Результат распознавания"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/wr_confidence_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Уверенность: 0%"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/wr_btn_view_encyclopedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Подробнее в энциклопедии"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/text_color"
+                    android:background="@drawable/menu_bottom_background"
+                    app:backgroundTint="@color/menu_back_1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Контейнер рекомендаций -->
+            <LinearLayout
+                android:id="@+id/wr_recommendations_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рекомендации по утилизации"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/wr_recommendations_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рекомендации будут показаны здесь"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/comfortaa_regular"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Нижнее меню навигации -->
+    <RelativeLayout
+        android:id="@+id/wr_bottom_nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/wr_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/menu_bottom_background"
+            app:menu="@menu/bottom_menu"
+            app:itemIconSize="35dp"
+            app:itemIconTint="@drawable/menu_item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:elevation="0dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

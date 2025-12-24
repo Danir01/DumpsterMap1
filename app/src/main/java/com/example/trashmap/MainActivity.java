@@ -172,6 +172,13 @@ public class MainActivity extends AppCompatActivity implements
                     return true;
                 case R.id.menu_map:
                     return true;
+                case R.id.menu_ai_recognition:
+                    intent = new Intent(getApplicationContext(), com.example.trashmap.AI.WasteRecognitionActivity.class);
+                    intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
+                    startActivity(intent);
+                    overridePendingTransition(0, 0);
+                    finish();
+                    return true;
                 case R.id.menu_profile:
                     intent = new Intent(getApplicationContext(), ProfileActivity.class);
                     intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
@@ -209,6 +216,8 @@ public class MainActivity extends AppCompatActivity implements
         linearLayoutManager.setOrientation(linearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        // Отключаем бесконечную прокрутку
+        recyclerView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         recyclerView.setAdapter(garbageAdapter);
         garbageAdapter.notifyDataSetChanged();
 
@@ -329,7 +338,8 @@ public class MainActivity extends AppCompatActivity implements
 
     //TODO: Автоматизировать.
     /**
-     * Функция для создания типов отходов в БД
+     * Функция для создания/обновления типов отходов в БД
+     * Обновляет типы отходов в Firebase на основе массива GarbageCategory из strings.xml
      */
     private void setGarbageTypes(){
 
@@ -347,9 +357,16 @@ public class MainActivity extends AppCompatActivity implements
             garbageTypes.add(new GarbageType(counter, type, Constant.GARBAGE_IMG_ALL));
             counter++;
         }
+        
+        // Записываем все типы в БД
         for (GarbageType gT : garbageTypes) {
             myDataBase.child(String.valueOf(gT.idType)).setValue(gT);
         }
+        
+        // Показываем уведомление об успешном обновлении
+        Toast.makeText(MainActivity.this, 
+                "Типы отходов обновлены! Загружено типов: " + garbageTypes.size(), 
+                Toast.LENGTH_LONG).show();
     }
 
 

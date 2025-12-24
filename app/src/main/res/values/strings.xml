@@ -59,17 +59,16 @@
     </string>
 
     <string-array name="GarbageCategory">
+        <item>Батарейки</item>
+        <item>Биологические отходы</item>
         <item>Бытовые отходы</item>
+        <item>Картон</item>
+        <item>Макулатура</item>
+        <item>Металл</item>
+        <item>Обувь</item>
+        <item>Одежда</item>
         <item>Пластик</item>
         <item>Стекло</item>
-        <item>Металл</item>
-        <item>Батарейки</item>
-        <item>Макулатура</item>
-        <item>Древесина</item>
-        <item>Электроника</item>
-        <item>Нефть</item>
-        <item>Отработанные масла</item>
-        <item>Одежда</item>
     </string-array>
 
     <string-array name="ErrorMarks">

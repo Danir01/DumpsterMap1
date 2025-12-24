@@ -372,7 +372,6 @@ public class AddNewMarker extends AppCompatActivity implements
         Bitmap bitmap = BitmapFactory.decodeFile(currentPhotoPath, bmOptions);
 
         img.setImageBitmap(bitmap);
-
     }
 
     /**
@@ -687,4 +686,5 @@ public class AddNewMarker extends AppCompatActivity implements
         }
         return tempReturn;
     }
+
 }

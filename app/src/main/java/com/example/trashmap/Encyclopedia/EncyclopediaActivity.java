@@ -51,6 +51,13 @@ public class EncyclopediaActivity extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     finish();
                     return true;
+                case R.id.menu_ai_recognition:
+                    intent = new Intent(getApplicationContext(), com.example.trashmap.AI.WasteRecognitionActivity.class);
+                    intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
+                    startActivity(intent);
+                    overridePendingTransition(0, 0);
+                    finish();
+                    return true;
                 case R.id.menu_profile:
                     intent = new Intent(getApplicationContext(), ProfileActivity.class);
                     intent.putExtra(Constant.GARBAGE_KEY, (Serializable) garbageList);
@@ -76,6 +83,8 @@ public class EncyclopediaActivity extends AppCompatActivity {
 
         encyclopediaAdapter = new EncyclopediaAdapter(itemList, onGarbageTypeClickListener);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        // Отключаем бесконечную прокрутку
+        recyclerView.setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         recyclerView.setAdapter(encyclopediaAdapter);
         encyclopediaAdapter.notifyDataSetChanged();
     }

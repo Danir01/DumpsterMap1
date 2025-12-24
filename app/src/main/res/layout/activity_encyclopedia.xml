@@ -43,20 +43,20 @@
         android:id="@+id/mainRelativeMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="30dp">
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/encyclopediaBottomNavigationMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/encyclopediaBottomNavigationMenu"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/menu_bottom_background"
-            app:menu="@menu/bottom_menu"
+            app:elevation="0dp"
             app:itemIconSize="35dp"
             app:itemIconTint="@drawable/menu_item_selector"
             app:itemRippleColor="@android:color/transparent"
             app:labelVisibilityMode="unlabeled"
-            app:elevation="0dp"
-            />
+            app:menu="@menu/bottom_menu" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
